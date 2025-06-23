@@ -27,11 +27,7 @@
 
 ### Installation
 1. Clone the repository
-```bash
-git clone https://github.com/mdalmamunit427/modern-business-landing-page-react-tailwindcss
 
-cd modern-business-landing-page-react-tailwindcss
-```
 
 
 
