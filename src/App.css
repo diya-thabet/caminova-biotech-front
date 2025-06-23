@@ -1,0 +1,201 @@
+.active {
+  color: #d97706; /* Darker gold for better contrast on white */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 25s linear infinite;
+}
+
+.testimonials-swiper {
+  padding: 20px 0;
+}
+
+.testimonials-swiper .swiper-slide {
+  height: auto;
+}
+
+/* Hide default Swiper navigation buttons */
+.testimonials-swiper .swiper-button-next::after,
+.testimonials-swiper .swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  display: none;
+}
+
+.swiper-button-next-custom.swiper-button-disabled,
+.swiper-button-prev-custom.swiper-button-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Sahara theme body styling - White background */
+body {
+  background: linear-gradient(
+    135deg,
+    #ffffff 0%,
+    #f9fafb 30%,
+    #ffffff 70%,
+    #f3f4f6 100%
+  );
+  color: #111827; /* Dark text for readability */
+  min-height: 100vh;
+}
+
+/* Gold placeholder styling for white background */
+input::placeholder {
+  color: rgba(217, 119, 6, 0.6); /* Darker gold with opacity */
+}
+
+/* Enhanced button transitions */
+button {
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 25px rgba(217, 119, 6, 0.15);
+}
+
+/* Custom scrollbar for white Sahara theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f3f4f6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #f59e0b, #d97706);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #d97706, #b45309);
+}
+
+/* Selection styling to match white theme */
+::selection {
+  background-color: rgba(217, 119, 6, 0.2);
+  color: #111827;
+}
+
+/* Focus styles for accessibility on white background */
+*:focus {
+  outline: 2px solid #f59e0b;
+  outline-offset: 2px;
+}
+
+/* Custom animations for white Sahara theme */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(217, 119, 6, 0.08),
+    transparent
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+/* Desert sand particle effect for white background */
+@keyframes sand-drift {
+  0%,
+  100% {
+    transform: translateX(0) translateY(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+.sand-particle {
+  animation: sand-drift 8s infinite linear;
+}
+
+/* Additional white background enhancements */
+.card-shadow {
+  box-shadow: 0 4px 6px rgba(217, 119, 6, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.card-shadow:hover {
+  box-shadow: 0 10px 15px rgba(217, 119, 6, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Gold accent borders */
+.gold-border {
+  border: 1px solid rgba(217, 119, 6, 0.2);
+}
+
+.gold-border:hover {
+  border-color: rgba(217, 119, 6, 0.4);
+}
+
+/* Text colors for white background */
+.text-primary {
+  color: #111827;
+}
+
+.text-secondary {
+  color: #6b7280;
+}
+
+.text-accent {
+  color: #d97706;
+}
+
+/* Background variants */
+.bg-primary {
+  background-color: #ffffff;
+}
+
+.bg-secondary {
+  background-color: #f9fafb;
+}
+
+.bg-accent {
+  background: linear-gradient(135deg, #fef3c7, #fed7aa);
+}
+
+/* Subtle texture overlay for desert feel */
+.desert-texture::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(
+      circle at 25% 25%,
+      rgba(217, 119, 6, 0.02) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 75% 75%,
+      rgba(245, 158, 11, 0.02) 0%,
+      transparent 50%
+    );
+  pointer-events: none;
+}
