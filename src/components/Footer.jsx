@@ -20,9 +20,11 @@ const Footer = () => {
             <h3 className="text-2xl font-bold text-yellow-500">
               Caminova Biotech
             </h3>
-            <p className="text-white/80">Gabes, TUNISIA</p>
+            <p className="text-white/80">
+              Pépinière des entreprises, Gabes, TUNISIA
+            </p>
             <p className="text-white/80">+216 97 606 704</p>
-            <p className="text-white/80">email@caminovabiotech.com</p>
+            <p className="text-white/80">sbessalah@caminovabiotech.com</p>
           </motion.div>
 
           {/* Social Links */}

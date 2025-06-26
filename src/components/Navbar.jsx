@@ -18,7 +18,7 @@ const Navbar = () => {
     <motion.nav
       variants={fadeIn("down", 0.2)}
       initial="hidden"
-      whileInView="show"
+      whileInView={"show"}
       viewport={{ once: true }}
       className="fixed top-0 left-0 right-0 bg-black/90 backdrop-blur-sm z-50 border-b border-yellow-400/30 shadow-sm"
     >
@@ -28,15 +28,14 @@ const Navbar = () => {
           variants={fadeIn("right", 0.3)}
           className="flex items-center gap-1 cursor-pointer"
         >
-          <motion.div
+          <motion.img
+            src="logopng.png"
+            alt="Logo"
             whileHover={{ scale: 1.1 }}
-            className="w-4 h-4 bg-yellow-400 rounded-full opacity-75 hover:opacity-100 transition-opacity"
-          ></motion.div>
-          <motion.div
-            whileHover={{ scale: 1.1 }}
-            className="w-4 h-4 bg-yellow-600 rounded-full -ml-2 hover:opacity-75 transition-opacity"
-          ></motion.div>
+            className="w-37 h-37 rounded-full object-cover transition-transform duration-300" // You can adjust w-10 and h-10 for size
+          />
         </motion.div>
+
         {/* Mobile Menu Button */}
         <motion.button
           variants={fadeIn("left", 0.3)}
