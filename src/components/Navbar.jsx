@@ -28,11 +28,17 @@ const Navbar = () => {
           variants={fadeIn("right", 0.3)}
           className="flex items-center gap-1 cursor-pointer"
         >
-          <motion.img
+          {/* <motion.img
             src="sigle.png"
             alt="Logo"
             whileHover={{ scale: 1.1 }}
-            className="w-20 h-20 rounded-full object-cover transition-transform duration-300" // You can adjust w-10 and h-10 for size
+            className="w-20 h-20 rounded-full object-cover transition-transform duration-300"
+          /> */}
+          <motion.img
+            src="logopng.png"
+            alt="Logo"
+            whileHover={{ scale: 1.1 }}
+            className="w-37 h-37 rounded-full object-cover transition-transform duration-300"
           />
         </motion.div>
 
